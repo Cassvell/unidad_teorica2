@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: elsarticle-template-1-num.aux
+The style file: model1-num-names.bst
+Database file #1: Mendeley_Tarot.bib
+Warning--empty pages in Arango2010TheMarkets
+Warning--empty pages in Arango2008AValue
+Warning--empty pages in Arango2008OOtima
+Warning--empty pages in Arango2016ImpactQuality
+Warning--missing institution in ANEEL2008Second33/208.
+You've used 8 entries,
+            2616 wiz_defined-function locations,
+            624 strings with 6630 characters,
+and the built_in function-call counts, 4653 in all, are:
+= -- 304
+> -- 277
+< -- 3
++ -- 105
+- -- 96
+* -- 568
+:= -- 760
+add.period$ -- 8
+call.type$ -- 8
+change.case$ -- 71
+chr.to.int$ -- 7
+cite$ -- 13
+duplicate$ -- 294
+empty$ -- 273
+format.name$ -- 114
+if$ -- 805
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 68
+newline$ -- 42
+num.names$ -- 32
+pop$ -- 103
+preamble$ -- 1
+purify$ -- 72
+quote$ -- 0
+skip$ -- 83
+stack$ -- 0
+substring$ -- 96
+swap$ -- 241
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 5
+while$ -- 24
+width$ -- 0
+write$ -- 105
+(There were 5 warnings)

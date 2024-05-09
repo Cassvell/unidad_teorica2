@@ -1,0 +1,693 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.4.4)  19 APR 2024 15:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**elsarticle-template-1-num.tex
+(./elsarticle-template-1-num.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16>
+(/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-01-16 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count185
+\l__pdf_internal_box=\box51
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-01-16 L3 Experimental document command parser
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count186
+)
+\@bls=\dimen140
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+)
+\c@tnote=\count195
+\c@fnote=\count196
+\c@cnote=\count197
+\c@ead=\count198
+\c@author=\count199
+\@eadauthor=\toks17
+\c@affn=\count266
+\absbox=\box52
+\elsarticlehighlightsbox=\box53
+\elsarticlegrabsbox=\box54
+\keybox=\box55
+\Columnwidth=\dimen144
+\space@left=\dimen145
+\els@boxa=\box56
+\els@boxb=\box57
+\leftMargin=\dimen146
+\@enLab=\toks18
+\@sep=\skip50
+\@@sep=\skip51
+
+(./elsarticle-template-1-num.spl)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count267
+)
+\splwrite=\write3
+\openout3 = `elsarticle-template-1-num.spl'.
+
+\appnamewidth=\dimen147
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(./elsarticle-template-1-num.aux)
+\openout1 = `elsarticle-template-1-num.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen148
+\scratchbox=\box58
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen149
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 142
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 142
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 152--159
+
+ []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<Fig1.png, id=19, 411.78844pt x 226.59656pt>
+File: Fig1.png Graphic file (type png)
+<use Fig1.png>
+Package pdftex.def Info: Fig1.png  used on input line 161.
+(pdftex.def)             Requested size: 312.00119pt x 171.68616pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
+
+ []
+
+[2 <./Fig1.png>]
+<Fig2.png, id=23, 472.76625pt x 166.37157pt>
+File: Fig2.png Graphic file (type png)
+<use Fig2.png>
+Package pdftex.def Info: Fig2.png  used on input line 172.
+(pdftex.def)             Requested size: 312.00119pt x 109.79794pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
+
+ []
+
+<Fig3.png, id=24, 193.47281pt x 121.20282pt>
+File: Fig3.png Graphic file (type png)
+<use Fig3.png>
+Package pdftex.def Info: Fig3.png  used on input line 193.
+(pdftex.def)             Requested size: 193.47234pt x 121.20251pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+[3 <./Fig2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+[4 <./Fig3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
+
+ []
+
+<Fig4.png, id=34, 289.08pt x 301.8778pt>
+File: Fig4.png Graphic file (type png)
+<use Fig4.png>
+Package pdftex.def Info: Fig4.png  used on input line 253.
+(pdftex.def)             Requested size: 175.49881pt x 183.26538pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--280
+
+ []
+
+[5 <./Fig4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--343
+
+ []
+
+[7]
+<Fig5.png, id=47, 289.83281pt x 316.93407pt>
+File: Fig5.png Graphic file (type png)
+<use Fig5.png>
+Package pdftex.def Info: Fig5.png  used on input line 351.
+(pdftex.def)             Requested size: 175.49881pt x 191.9077pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+[8 <./Fig5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--436
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
+
+ []
+
+<Fig6.png, id=57, 378.66469pt x 335.75438pt>
+File: Fig6.png Graphic file (type png)
+<use Fig6.png>
+Package pdftex.def Info: Fig6.png  used on input line 488.
+(pdftex.def)             Requested size: 175.49881pt x 155.61185pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+ []
+
+[11]
+<Fig7.png, id=62, 378.66469pt x 335.75438pt>
+File: Fig7.png Graphic file (type png)
+<use Fig7.png>
+Package pdftex.def Info: Fig7.png  used on input line 501.
+(pdftex.def)             Requested size: 195.0pt x 172.90262pt.
+<Fig8.png, id=63, 377.15906pt x 335.75438pt>
+File: Fig8.png Graphic file (type png)
+<use Fig8.png>
+Package pdftex.def Info: Fig8.png  used on input line 510.
+(pdftex.def)             Requested size: 195.0pt x 173.58913pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+
+ []
+
+[12 <./Fig6.png> <./Fig7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+<Fig9.png, id=67, 377.15906pt x 335.75438pt>
+File: Fig9.png Graphic file (type png)
+<use Fig9.png>
+Package pdftex.def Info: Fig9.png  used on input line 527.
+(pdftex.def)             Requested size: 195.0pt x 173.58913pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Fig10.png, id=68, 377.15906pt x 335.75438pt>
+File: Fig10.png Graphic file (type png)
+<use Fig10.png>
+Package pdftex.def Info: Fig10.png  used on input line 540.
+(pdftex.def)             Requested size: 175.49881pt x 156.23175pt.
+[13 <./Fig8.png>]
+<fig11.png, id=74, 377.15906pt x 335.75438pt>
+File: fig11.png Graphic file (type png)
+<use fig11.png>
+Package pdftex.def Info: fig11.png  used on input line 548.
+(pdftex.def)             Requested size: 175.49881pt x 156.23175pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--558
+
+ []
+
+[14 <./Fig9.png> <./Fig10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 561--564
+
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 574--574
+[]\OT1/cmr/m/n/12 20944,36| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 574--574
+[]\OT1/cmr/m/n/12 19242,81| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 574--574
+[]\OT1/cmr/m/n/12 19242,81| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 575--575
+[]\OT1/cmr/m/n/12 37811,87| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 575--575
+[]\OT1/cmr/m/n/12 35001,49| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 575--575
+[]\OT1/cmr/m/n/12 35001,49| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 576--576
+[]\OT1/cmr/m/n/12 51221,96| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 576--576
+[]\OT1/cmr/m/n/12 47262,62| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 576--576
+[]\OT1/cmr/m/n/12 47262,62| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 577--577
+[]\OT1/cmr/m/n/12 61169,19| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 577--577
+[]\OT1/cmr/m/n/12 56012,36| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 577--577
+[]\OT1/cmr/m/n/12 56012,36| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 578--578
+[]\OT1/cmr/m/n/12 67709,17| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 578--578
+[]\OT1/cmr/m/n/12 61252,05| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 578--578
+[]\OT1/cmr/m/n/12 61252,05| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 579--579
+[]\OT1/cmr/m/n/12 69419,39| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 579--579
+[]\OT1/cmr/m/n/12 62319,17| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 579--579
+[]\OT1/cmr/m/n/12 62319,17| 
+ []
+
+
+Overfull \hbox (21.8255pt too wide) in paragraph at lines 569--584
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 597--597
+[]\OT1/cmr/m/n/12 62499,97| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 597--597
+[]\OT1/cmr/m/n/12 62499,97| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 598--598
+[]\OT1/cmr/m/n/12 62499,83| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 598--598
+[]\OT1/cmr/m/n/12 62499,83| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 599--599
+[]\OT1/cmr/m/n/12 62499,31| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 599--599
+[]\OT1/cmr/m/n/12 62499,31| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 600--600
+[]\OT1/cmr/m/n/12 62497,15| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 600--600
+[]\OT1/cmr/m/n/12 62497,15| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 601--601
+[]\OT1/cmr/m/n/12 62476,80| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 601--601
+[]\OT1/cmr/m/n/12 62476,80| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 602--602
+[]\OT1/cmr/m/n/12 62319,17| 
+ []
+
+
+Overfull \hbox (1.7093pt too wide) in paragraph at lines 602--602
+[]\OT1/cmr/m/n/12 62319,17| 
+ []
+
+
+Overfull \hbox (21.8255pt too wide) in paragraph at lines 592--608
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--614
+
+ []
+
+[15 <./fig11.png>]
+<Fig12.png, id=82, 363.60844pt x 219.06844pt>
+File: Fig12.png Graphic file (type png)
+<use Fig12.png>
+Package pdftex.def Info: Fig12.png  used on input line 619.
+(pdftex.def)             Requested size: 350.99762pt x 211.47658pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--631
+
+ []
+
+[16] [17 <./Fig12.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 635--641
+
+ []
+
+(./elsarticle-template-1-num.bbl [18]) [19] (./elsarticle-template-1-num.aux) )
+ 
+Here is how much of TeX's memory you used:
+ 3201 strings out of 476091
+ 47012 string characters out of 5794082
+ 1878330 words of memory out of 5000000
+ 23550 multiletter control sequences out of 15000+600000
+ 523581 words of font info for 74 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,11n,76p,621b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on elsarticle-template-1-num.pdf (19 pages, 400801 bytes).
+PDF statistics:
+ 190 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

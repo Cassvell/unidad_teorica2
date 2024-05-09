@@ -1,0 +1,74 @@
+\begin{thebibliography}{8}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Phdthesis
+\bibitem[{Penin(2008)}]{Penin2008CombatPortuguese}
+\bibinfo{author}{C.~Penin}, \bibinfo{title}{{Combat, prevention and
+  optimization of electrical energy commercial losses (in Portuguese)}}, Ph.D.
+  thesis, Polythecnic School from the University of Sao Paulo.,
+  \bibinfo{year}{2008}.
+%Type = Article
+\bibitem[{Smith(2004)}]{Smith2004ElectricityAnalysis}
+\bibinfo{author}{T.~B. Smith},
+\newblock \bibinfo{title}{{Electricity theft: A comparative analysis}},
+\newblock \bibinfo{journal}{Energy Policy}  (\bibinfo{year}{2004}).
+%Type = Article
+\bibitem[{Amin et~al.(2015)Amin, Schwartz, Cardenas, and
+  Sastry}]{Amin2015Game-theoreticInfrastructure}
+\bibinfo{author}{S.~Amin}, \bibinfo{author}{G.~A. Schwartz},
+  \bibinfo{author}{A.~A. Cardenas}, \bibinfo{author}{S.~S. Sastry},
+\newblock \bibinfo{title}{{Game-theoretic models of electricity theft detection
+  in smart utility networks: Providing new capabilities with advanced metering
+  infrastructure}},
+\newblock \bibinfo{journal}{IEEE Control Systems}  (\bibinfo{year}{2015}).
+%Type = Inproceedings
+\bibitem[{Arango et~al.(2010)Arango, De~Abreu, Bonatto, Tahan, Kagan, and
+  Gouvea}]{Arango2010TheMarkets}
+\bibinfo{author}{H.~Arango}, \bibinfo{author}{J.~P.~G. De~Abreu},
+  \bibinfo{author}{B.~D. Bonatto}, \bibinfo{author}{C.~M.~V. Tahan},
+  \bibinfo{author}{N.~Kagan}, \bibinfo{author}{M.~R. Gouvea},
+\newblock \bibinfo{title}{{The influence of quality on the creation of economic
+  value in electricity markets}},
+\newblock in: \bibinfo{booktitle}{ICHQP 2010 - 14th International Conference on
+  Harmonics and Quality of Power}.
+%Type = Inproceedings
+\bibitem[{Arango et~al.(2008{\natexlab{a}})Arango, Abreu, Bonatto, Kagan,
+  Tahan, and Gouvea}]{Arango2008AValue}
+\bibinfo{author}{H.~Arango}, \bibinfo{author}{J.~P.~G. Abreu},
+  \bibinfo{author}{B.~D. Bonatto}, \bibinfo{author}{N.~Kagan},
+  \bibinfo{author}{C.~M.~V. Tahan}, \bibinfo{author}{M.~R. Gouvea},
+\newblock \bibinfo{title}{{A model for electricity markets: The impact of
+  regulation on value}},
+\newblock in: \bibinfo{booktitle}{2008 5th International Conference on the
+  European Electricity Market, EEM}.
+%Type = Inproceedings
+\bibitem[{Arango et~al.(2008{\natexlab{b}})Arango, Policarpo, De~Abreu,
+  Bonatto, Tahan, Kagan, and Gouv{\^{e}}a}]{Arango2008OOtima}
+\bibinfo{author}{H.~Arango}, \bibinfo{author}{J.~Policarpo},
+  \bibinfo{author}{G.~De~Abreu}, \bibinfo{author}{B.~D. Bonatto},
+  \bibinfo{author}{C.~M.~V. Tahan}, \bibinfo{author}{N.~Kagan},
+  \bibinfo{author}{M.~R. Gouv{\^{e}}a},
+\newblock \bibinfo{title}{{O Impacto econ{\^{o}}mico da qualidade da energia
+  el{\'{e}}trica e sua regula{\c{c}}{\~{a}}o {\'{o}}tima}},
+\newblock in: \bibinfo{booktitle}{Induscon - VIII Confer{\^{e}}ncia
+  Internacional de Aplica{\c{c}}ões Industriais},
+  \bibinfo{address}{Po{\c{c}}os de Caldas}.
+%Type = Inproceedings
+\bibitem[{Arango et~al.(2016)Arango, Deccache, Bonatto, Arango, Ribeiro, and
+  Silveira}]{Arango2016ImpactQuality}
+\bibinfo{author}{L.~G. Arango}, \bibinfo{author}{E.~Deccache},
+  \bibinfo{author}{B.~Bonatto}, \bibinfo{author}{H.~Arango},
+  \bibinfo{author}{P.~F. Ribeiro}, \bibinfo{author}{P.~M. Silveira},
+\newblock \bibinfo{title}{{Impact of Electricity Theft on Power Quality}},
+\newblock in: \bibinfo{booktitle}{IEEE PES ICHQP 2016 - 17th International
+  Conference on Harmonics and Quality of Power}, \bibinfo{address}{Belo
+  Horizonte, Minas Gerais State, Brazil}.
+%Type = Techreport
+\bibitem[{{ANEEL}(2008)}]{ANEEL2008Second33/208.}
+\bibinfo{author}{{ANEEL}}, \bibinfo{title}{{Second periodic tariff revision of
+  electric power distribution company (in portuguese). Technical Report
+  33/208.}}, \bibinfo{type}{Technical Report}, \bibinfo{address}{Brasilia,
+  Brazil.}, \bibinfo{year}{2008}.
+
+\end{thebibliography}

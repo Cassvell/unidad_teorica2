@@ -1,0 +1,556 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,12pt]{article}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[multiple]{footmisc}
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{tocloft}
+\graphicspath{{./figs/}}
+\usepackage{setspace}
+\usepackage{comment}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, citecolor=black}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+\usepackage{amsthm}
+
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+ \usepackage[authoryear,round,longnamesfirst]{natbib}
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+%\journal{Energy Policy}
+
+%\newcommand{\footremember}[2]{%
+%	\footnote{#2}
+%	\newcounter{#1}
+%	\setcounter{#1}{\value{footnote}}%
+%}
+
+%\newcommand{\footrecall}[1]{%
+%	\footnotemark[\value{#1}]%
+%} 
+%% Title, authors and addresses
+\newcommand\fnsep{\textsuperscript{,}}
+
+\title{Geomagnetic Regional Response during Geomagnetic Storm Periods}
+
+\author{%
+	Carlos Isaac Castellanos-Velazco \\ Posgrado en Ciencias de la Tierra, \\ Universidad Nacional Aut\'onoma de M\'exico \\ Instituto de Geofísica, Unidad Michoacán%
+}
+
+%\date{}
+
+\begin{document}
+\maketitle
+%\begin{frontmatter}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \address[label1]{}
+%% \address[label2]{}
+
+
+%\author[rvt]{Carlos Isaac Castellanos Velazco\corref{cor1}\fnref{fn1,fn2}}
+%\ead{ccastellanos@igeofisica.unam.mx}
+%\author[rvt]{ Pedro Corona Romero \fnref{fn2, fn3}}
+%\ead{p.coronaromero@igeofisica.unam.mx }
+
+%%\author[els]{E.O.~Pamplona\corref{cor2}\fnref{fn1,fn3}}
+%%\ead[url]{pamplona@unifei.edu.br}
+%\cortext[cor1]{Corresponding author}
+%\cortext[cor2]{Principal corresponding author}
+%\fntext[fn1]{Posgrado en Ciencias de la Tierra, Universidad Nacional Aut\'onoma de M\'exico}
+%\fntext[fn2]{IGUM - Instituto de Geofisica, Unidad Michoacan}
+%\fntext[fn3]{LANCE - Laboratorio Nacional de Clima Espacial}
+
+
+%\address[rvt]{Antigua Carretera a P\'atzcuaro 8701, Michoacan Mexico}
+
+%\tnotetext[t1]{The authors would like to thank Jicamarca Observatory for financially supporting this research.}
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\begin{abstract}
+%% Text of abstract
+En este proyecto, se busca estudiar y entender la variabilidad de la respuesta geomagnética regional durante periodos de tormenta geomagnética.
+\end{abstract}
+
+%\begin{keyword}
+%Geomagnetic Storms \sep Regional Geomagnetic Field \sep Local Response \sep Magnetospheric Currents \sep Ionospheric Currents.
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+%\end{keyword}
+
+%\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+
+%% main text
+\section{Introducción}
+\label{S:1}
+
+\subsection{Fuentes del Campo magnético}
+El \emph{CMT} presenta variaciones a diversas escalas de tiempo, variaciones que implican transferencia de energía hacia o desde el mismo \emph{CMT} \cite{l_handbook_geof_sw_Geom_field}. Para el estudio del clima espacial, se suelen clasificar las contribuciones del campo magnético en 2 fuentes principales: Campo magnético regular y campo magnético perturbado \cite{ddyn2005}.\\
+
+
+En el caso del campo magnético regular, se encuentran las variaciones cíclicas asociadas con procesos presentes en la ionosfera. Estos procesos son debidos a corrientes ionosféricas, de las cuales se destaca la corriente del Sol Quieto (SQ). Esta corriente se origina debido a la variación con que la luz del Sol incide en la Ionosfera, ocasionando dos efectos: Ionización parcial de la atmósfera, y calentamiento de la misma. Éste último da lugar a un efecto de marea, debido a la expansión térmica. Como resultado, se genera un flujo de viento, el cual arrastra consigo partículas cargadas vía colisión. Las partículas que son arrastradas son principalmente iones positivos, debido a que colisionan con más frecuencia por su mayor sección transversal en comparación con los electrones \cite{l3, l_basic_spaceplasmaphysic}. Así mismo, los electrones tienen un menor radio de giro entorno a las lineas del CMT, por lo que su movimiento de deriva es menor.\\
+
+El arrastre de partículas cargadas por parte del viento neutro da lugar a un campo eléctrico polarizado debido a la separación de cargas. Al mismo tiempo, las partículas cargadas en la ionosfera experimentan movimientos de deriva $\mathbf{E \times B}$ que se genera en respuesta al campo eléctrico polarizado. Como resultado, se inducen dos tipos de corrientes. Por un lado, se inducen corrientes de Pedersen debido al arrastre de las pertículas. Por otro lado se inducen de corrientes de Hall debido a la deriva $\mathbf{E \times B}$. El proceso antes descrito ocurre del lado día, ya que es promovido por la incidencia de luz solar. El resultado es la aparición de un sistema de corrientes en cada hemisferio del lado día, al cual se le denomina como corrientes de Sol Quieto, las cuales también inducen campo magnético, cuyas variaciones pueden ser detectadas por magnetómetros en tierra.\\
+
+Las variaciones magnéticas asociadas con la corriente SQ tienen amplitudes en el rango de $10-100$ nT a lo largo del día \cite{iaga_guide, baseline_Gjerloev}. La intensidad de éstas fluctuaciones dependen de factores como la latitud geomagnética, la temporada del año, la hora local, e incluso, de la intensidad de la radiación solar debido a la actividad del Sol \cite{iaga_guide, gombosi_1998, l_handbook_geof_sw_Geom_field}.\\
+
+
+También se presentan variaciones magnéticas debido a los efectos de marea ocasionados por el Sol y la Luna sobre la ionosfera \cite{BARTELS_kp}.  Estas variaciones tienen una gran influencia por parte del ciclo de traslación de la Luna (efecto gravitacional), así como la rotación del Sol (variación en la incidencia de radiación). Esto da lugar a variaciones magnéticas estacionales. Este tipo de variación estacional da lugar a la \emph{variación día a día}. La variación día a día consiste en que de un día a otro habrán cambios en el comportamiento de la variación diurna, así como en su magnitud. Según \cite{iaga_guide} la variación día a día, presenta pequeñas amplitudes, de apenas $\sim 10$ nT, aunque su intensidad también depende de factores como la estación del año, latitud geomagnética, el ciclo de la luna así como la rotación solar.\\
+
+
+Los procesos de perturbación por otro lado, son aquellos que dan lugar a los eventos conocidos como tormentas geomagnéticas. Se trata de fenómenos donde, se presenta entrada de partículas provenientes del viento solar las cuales se agregan a las corrientes magnetosféricas. Este proceso da lugar a la intensificación de la actividad de las corrientes magnetosféricas. Como consecuencia de ésta intensificación, también se intensifica el campo magnético generado por éstas corrientes. El campo magnético intensificado por este proceso, es vectorialmente opuesto al CMT, lo que resulta en un debilitamiento temporal del mismo.\\
+
+Según \cite{ddyn2005}, las perturbaciones magnéticas relacionadas con las tormentas geomagnéticas, se dividen en contribución magnetosférica y contribución ionosférica. Por una parte, la contribución magnetosférica se debe a la intensificación de la actividad de las corrientes magnetosféricas durante eventos de tormenta. Aunque la mayor contribución magnética se asocia con la corriente del anillo, también se presenta una considerable aportación por parte de las corrientes de magnetopausa, magnetocola, así como la corriente parcial del anillo.\\
+
+Por otro lado, en latitudes geomagnéticas medias y bajas, la contribución ionosférica se debe a la presencia de dos corrientes ionosféricas. Las corrientes de perturbación polar 2 ($DP2$) \cite{nishida_68_fluctuations} y dínamo perturbado ($Ddyn$) \cite{blanc_ddyn}. Estas corrientes se caracterizan por afectar la ionosfera y el CMT para latitudes medias y bajas. Además, inducen fluctuaciones cuasi-periódicas  en el CMT a escala regional, las cuales pueden ser medidas en magnetómetros.\\
+
+De esta forma, la respuesta geomagnética regional se asocial con la actividad de éstas corrientes ionosféricas. No obstante, de acuerdo con \cite{partialringcurrentidx, partialringcurrentasym}, la asimetría de la corriente del anillo, así como las etapas en las cuales cada corriente magnetosférica contribuye en mayor o menor medida a los índices geomagnéticos. Lo anterior implica una fuerte relación con el sector de tiempo local en que se posicione la región de estudio durante el desarrollo de la tormenta geomagnética.
+
+\section{Trabajo de Investigación}
+\label{S:2}
+
+\subsection{Antecedentes}
+En \cite{tesis}, se comprobó que para el centro de México, se presentan perturbaciones geomagnéticas durante seis tormentas geomagnéticas. Por otro lado, en \cite{CASTELLANOSVELAZCO2024106237}, se realizó el mismo estudio y para la misma región, solo que para 20 tormentas geomagnéticas, además de implementar cambios en el pre-procesado de datos, lo cual permitió obtener una mayor confianza en los resultados obtenidos. En las conclusiones del mismo, se llegó a la decisión de no solo implementar datos con resolución temporal de un minuto (anteriormente de $\sim$ h), sino también de utilizar datos geomagnéticos disponibles de otros observatorios y/o estaciones magnéticas a diferentes latitudes geomagnéticas, pero con un tiempo local aproximadamente similar. De la misma forma, hacer uso de observaciones a una latitud aproximadamente similar a la del centro de México ($\sim 28^\circ \pm 5^\circ$), pero en diferentes sectores de tiempo local.\\
+
+Considerando el punto anterior, en primera instancia se agregaron tres tormentas, acontecidas durante el año 2023 \ref{tab:1}. Las tormentas agregadas se caracterizan por ser los primeros eventos intensos del ciclo solar 25 que actualmente se encuentra en desarrollo. Es importante mencionar que con el proyecto de la Red Mexicana de Magnetómetros (REGMEX) \cite{corona2024}, las tormentas posteriores al año 2023 podrán ser estudiadas desde diferentes puntos de México. Tal es el caso de la estación magnética de Coeneo (COE), de donde se obtuvieron los datos para las tres tormentas anexadas. También, es importante mencionar que para este proyecto, se estará trabajando con observaciones que cuentan con una resolución temporal de un minuto.\\ 
+
+\subsection{Casos de Estudio}
+\label{SS:2-1}
+
+
+Para este trabajo, se seleccionaron 23 Tormentas geomagnéticas (Tabla \ref{tab:1}) con base en los picos de los índices geomagnéticos locales $\Delta H_{local}$ y $K_{local}$ en México. A partir de los eventos selecionados, se buscó detectar y aislar las variaciones geomagnéticas regionales, así como la firma magnética asociada a los mecanismos físicos que provocan tales efectos. \\
+
+\begin{table*}[h!]
+	\normalsize
+	\centering
+	\caption{Casos de estudio: Número de evento, TG Fecha de inicio de la fase principal, Mínimo (Máximo) valor alcanzado durante los eventos para ${\rm Dst}$(${\rm K_P}$) y ${\rm \Delta H_{TEO}}$(${\rm K_{TEO}}$)}
+	\label{tab:1}
+	\begin{tabular}{cccccc}
+		\hline
+		Evento & Inicio de & $^a {\rm Dst}$ mínimo
+		& $^b{\rm \Delta H}$ mínimo
+		& $^a{\rm K_p}$ & $^b {\rm K_{local}}$ \\
+		\#    & Tormenta & [nT] & [nT] & máximo & máximo\\
+		\hline
+		1 & 2003/05/29 & -144 & -190 & 8+ & 9 \\ 
+		2 & 2003/10/14 & -85 & -126 & 7+ & 7- \\ 
+		3 & 2003/11/20 & -422 & -441 & 9- & 9 \\ 
+		4 & 2004/07/22 & -170 & -167 & 9- & 8+ \\ 
+		5 & 2004/08/30 & -129 & -154 & 7 & 7- \\ 
+		6 & 2004/11/08 & -374 & -398 & 9- & 9 \\ 
+		7 & 2005/05/15 & -247 & -206 & 8+ & 7 \\ 
+		8 & 2005/06/12 & -106 & -120 & 7+ & 6+ \\ 
+		9 & 2005/08/24 & -184 & -138 & 9- & 9- \\ 
+		10 & 2005/08/31 & -122 & -125 & 7 & 6+ \\ 
+		11 & 2006/08/19 & -79 & -131 & 6 & 7- \\ 
+		12 & 2006/12/14 & -162 & -247 & 8+ & 9 \\ 
+		13 & 2015/03/15 & -222 & -282 & 8 & 8- \\ 
+		14 & 2015/10/07 & -124 & -143 & 7+ & 7+ \\ 
+		15 & 2015/12/20 & -155 & -189 & 7- & 7 \\ 
+		16 & 2016/03/06 & -98 & -120 & 6 & 7 \\ 
+		17 & 2016/10/13 & -104 & -128 & 6+ & 6+ \\ 
+		18 & 2017/05/27 & -125 & 145 & 7 & 8 \\ 
+		19 & 2017/09/07 & -124 & -170 & 8+ & 8+ \\ 
+		20 & 2018/09/25 & -175 & -176 & 7+ & 7- \\
+		21 & 2023/02/26 & -144 & -190 & 8+ & 9 \\ 
+		22 & 2023/03/23 & -85 & -126 & 7+ & 7- \\ 
+		23 & 2023/04/23 & -422 & -441 & 9- & 9 \\ 		 
+		\hline
+		\multicolumn{6}{l}{Comentarios para la tabla.} \\
+		\multicolumn{6}{l}{$^a$ Dst y Kp fueron obtenidos de \href{http://isgi.unistra.fr/data_download.php}{International Service of Geomagnetic Indices (ISGI)}.}\\
+		\multicolumn{6}{l}{$^b$ Índices geomagnéticos regionales $\mathrm{\Delta H_{TEO}}$ and ${\rm K_{local}}$Fueron calculados por el } \\
+		\multicolumn{6}{l}{Laboratorio Nacional de Clima Espacial, usando observaciones de TEO }\\ 
+		\multicolumn{6}{l}{(eventos 1-20) y COE (eventos 21 -).} \end{tabular}
+\end{table*}
+
+
+
+Para el estudio de respuesta geomagnética local en otras regiones, se accedió la plataforma pública de INTERMAGNET (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet}). Se seleccionaron 15 observatorios magnéticos, cuya información más relevante se muestra en la Tabla \ref{tab:2}. Se consideraron con mismos eventos enlistados de la Tabla \ref{tab:1}, para estudiarse en cada observatorio enlistado en la Tabla \ref{tab:2}. Cabe señalar que el estudio se limita a la disponibilidad de observaciones geomagnéticas en cada tormenta, por lo que hay eventos no estudiados por falta de datos. \\
+
+
+Otra de las limitantes de la base de datos de INTERMAGNET, es el no acceso a observaciones de ciertas redes de magnetómetros los cuales no están afiliados. Tal es el caso de las redes de observatorios presente en Perú y Brasil, donde solamente se cuenta con los datos de un solo observatorio por sitio. Es por ello que, parte del propósito de éste proyecto es el de establecer una relación de colaboración con el IGP (Instituto de Geofísica del Perú). El IGP cuenta con una red de magnetómetros en Perú, el cual se posiciona sobre parte del ecuador geomagnético, siendo éste un caso único en el mundo.\\ 
+
+\begin{table}[htbp]
+		\normalsize
+	\centering
+	\caption{Lista de Observatorios geomagnéticos seleccionados, cuyos datos se encuentran disponibles de forma pública en la plataforma INTERMAGNET}
+	\begin{tabular}{lllllll}
+		\hline
+		País & Observatorios & codigo & $lat_{geo}$ & $lon_{geo}$ & $lat_{mag}$ &  $lon_{mag}$\\ \hline
+		México & Teoloyucan & TEO & 19.747 N & 99.182 W & 27.81 N & 28.4 W \\
+		México & Coeneo & COE & 19.747 N & 99.182 W & 27.81 N & 28.4 W \\
+		&  &  &  &  &  &  \\ 
+		\multicolumn{7}{l}{Observatorios a misma longitud geomagnética de TEO, diferente latitud} \\  \hline
+		Canadá & Brandon & BRD & 49.877 N & 99.974 W & 57.64 N & 33.7 W \\ 
+		Chile & Isla de Pascua & IPM & 27.1713 S & 109.42 W & 19.52 S & 34.46 W \\ 
+		USA & Boulder & BOU & 40.14 N & 105.233 W & 47.5 N & 37.67 W \\ 
+		&  &  &  &  &  &  \\
+		&  &  &  &  &  &  \\ 
+		\multicolumn{7}{l}{Observatorios a misma latitud geomagnética de TEO, diferente longitud} \\ \hline
+		USA & San Juan & SJG & 18.11 N & 66.15 W & 27.15 N & 6.95 E \\ 
+		Argelia & Tamanraset & TAM & 22.79 N & 5.53 E & 24.23 N & 82.12 E \\ 
+		Corea del Sur & Cheongyang & CYG & 36.37 N & 126.854 E & 27.45 N & 162.32 W \\
+		Japón & Kakioka & KAK & 36.232 N & 140.186 E & 28.17 N & 150.18 W \\ 
+		China & Beijing Ming T & BMT & 40.3 N & 116.2 E & 31 N & 172.11 W \\ 
+		España & Guimar & GUI & 28.321 N & 16.441 E & 27.91 N & 94.01 E \\ 
+		&  &  &  &  &  &  \\ 
+		&  &  &  &  &  &  \\ 
+		\multicolumn{7}{l}{Observatorios a latitud geomagnética de TEO opuesta, diferente longitud} \\ \hline
+		Argentina & Pilar & PIL & 31.667 S & 63.881 W & 22.38 S & 8.08 E \\ 
+		St.H$^a$, A$^a$. y TDC$^a$. & Tristan Da Cunha & TDC & 37.067 S & 12.316 W & 31.94 S & 54.99 E \\ 
+		Namibia & Keetmanshoop & KMH & 26.54 S & 18.11 W & 26.14 S & 86.2 E \\ 
+		South Africa & Hartebeesthoek & HBK & 25.880 S & 27.21 E & 27.03 S & 95.82 E \\ 
+		Australia & Cocos Islas & CKI & 12.88 S & 96.83 E  & 21.16 S & 168.97 E \\ 
+		Australia & Kakadu & KDU & 12.69 S & 132.47 E & 20.91 S & 153.67 W \\ \hline
+		\multicolumn{7}{l}{Comments for the Table.} \\
+		\multicolumn{7}{l}{$(lat/lon)_{geo}$: latitud/longitud geográfica.}\\
+		\multicolumn{7}{l}{$(lat/lon)_{mag}$: latitud/longitud magnética.} \\
+		\multicolumn{7}{l}{$^a$: Saint helena, Ascensión y Tristan Da Cunha.} 	
+	\end{tabular}
+	\label{tab:2}
+\end{table}
+
+
+
+\subsection{Pre-procesado de Datos}
+\label{SS:2-2}
+
+A partir de las observaciones del CMT, se pueden identificar o definir variaciones para diferentes escalas de tiempo. Las variaciones cíclicas con periodos menores al año, son conocidas como \emph{variaciones regulares} y son: la variación \emph{día a día} y la \emph{variación diurna} \cite{l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt}. Es necesario poder identificar las variaciones regulares en los registros magnéticos y remover sus efectos. Durante este proceso, también se remueve el efecto del campo principal de la Tierra (del orden de $\sim 30 000$ nT). A este proceso se le conoce como derivación o cálculo de líneas base.\\
+
+Para determinar la línea base día a día o $H_0$,  el primer paso es identificar el valor típico diario \cite{baseline_Gjerloev}. El valor típico se refiere a lo que se pueda considerar como valor normal o común de cada día. Para este trabajo se consideró como valor típico diario la mediana de cada día. Una vez que se obtiene el valor típico para cada día, estos valores se interpolan, generando una serie de tiempo con resolución temporal de un minuto. La serie de tiempo calculada es la linea base $H_0$. Al momento realizar este procedimiento para tormentas geomagnéticas, es necesario considerar un umbral con el cual, el algoritmo de pre-procesamiento detecte los valores diarios asociados a periodos de tormenta. Así, todo valor que sobrepase el umbral será considerado como un día perturbado:
+
+\begin{equation}
+	\label{eq:2.1}
+    Umbral = H_{med} + \frac{\sigma \cdot 1.3490}{n}
+\end{equation}
+
+En la Ecuación \ref{eq:2.1}, $H_{med}$ es la mediana para cada ventana de tiempo mientras que $\sigma \cdot 1.3490$ es el rango intercuartil para distribuciones normales \cite{iqr_theory} y $n$ es un factor que se determinó de forma experimental para ajustar el umbral [\textbf{insertar diagrama al respecto}]. Todo valor que se supere tal umbral será considerado como valor nulo (NaN) y reemplazado usando una interpolación con los valores vecinos. Este procedimiento, permite derivar de forma más precisa la linea base $H_0$ para periodos de tormenta. Para los días en que se presente la fase de recuperación de la tormenta, se implementó un sistema semi-manual en el que el operador descartará de manualmente los valores diarios que coincidan con la fase de recuperación de la tormenta. Si bien ésta solución es aceptable al estudiar eventos en concreto, es poco práctica para observaciones en tiempo real, por lo que no se recomienda para éste último caso . El resultado de este procedimiento se muestra en la Figura \ref{fig:diadia3}.\\
+ 
+
+Para obtener la línea base diurna ($H_{SQ}$) es necesario identificar los días quietos. Se trata de los días caracterizados por tener una menor actividad geomagnética, siendo la contribución asociada con la corriente ionosférica del Sol quieto la más relevante. El criterio utilizado en este trabajo es el mismo seguido por \cite{vanKampt}, de la máxima fluctuación diaria. Para una ventana de tiempo con suficientes días y con una resolución de 1 minuto, se hace un re-muestreo de los datos a 1h. Cada hora, se calcula la desviación estándar (como en \cite{vanKampt}) o bien, como se hizo en este caso, utilizando el rango intercuartil. Éstos valores horarios describen el grado de variación magnética. El siguiente paso es seleccionar la máxima variación para cada día o $MAX(\sigma)/MAX(IQR)$. Aquellos picos diarios de menor valor en la ventana de tiempo, serán considerados como los días más quietos locales o \emph{DQL}.\\
+
+Para generar la linea base, \cite{vanKampt} considera que no es necesario utilizar los 5 días quietos por cada mes. En su lugar, \cite{vanKampt} utiliza únicamente dos \emph{DQL}: un día previo al evento y el segundo posterior al evento, enmarcando a la tormenta. Entre más cercanos (temporalmente) sean los DQL entre sí, la linea base será más precisa, aunque el umbral de separación entre los \emph{DQL} puede ser de hasta 66 días \cite{vanKampt}.\\
+
+A partir de aquí, se le aplicó una función de suavizado por cada 30 minutos \cite{baseline_Gjerloev} a la serie de tiempo resultante, a la cual identificamos como $H_{SQ}$. En la Figura \ref{fig:diasq} se puede observar el procedimiento llevado a cabo. En el panel superior se muestra que a partir de dos DQL se generan dos series de tiempo (lineas azul y roja), haciendo la interpolación se genera la linea base $H_{SQ}$ a la cual se le aplica la función de suavizado. Posteriormente, en el panel inferior se muestra el resultado de remover este efecto descrito en la Ecuación \ref{eq:lineabase}. La linea negra representa la serie de tiempo previa a remover el efecto $H_{SQ}$, mientras que la linea roja representa la serie de tiempo, removiendo $H_{SQ}$. Se puede apreciar una atenuación de los efectos de variación diurna para cada día, sin que éste afecte a los valores durante el periodo en que ocurre la tormenta.\\
+
+
+\section{Artículo Científico}
+
+\textbf{[Resumen hablando de lo que se hizo en el artículo, que incluye la identificación de las firmas magnéticas de Ddyn y DP2 así como su validación]} 
+
+El proceso de identificar las firmas magnéticas es el mismo que el seguido en \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}. Este proceso las mediciones de un magnetómetro en específico, se deben a la suma de varias fuentes de campo magnético, tal y como se describe a continuación:
+
+\begin{equation}
+	\label{eq:diono1}
+	H = H_P+H_{reg}
+\end{equation}
+
+\noindent donde, $H_{P}$ son las perturbaciones del campo magnético en la región a estudiar y $H_{reg} =H_0+H_{SQ}$ las variaciones regulares. Adicionalmente, las perturbaciones del campo magnético se pueden expresar como:
+
+\begin{equation}
+	\label{eq:pert}
+	H_P = H_{mag}+H_{iono}
+\end{equation}
+
+En la ecuación \ref{eq:pert}, el primer término del lado derecho se refiere a la contribución magnetosférica, mientras que el segundo se refiere a la contribución ionosférica. En la literatura es común que a $H_{mag}$ se le aproxime cómo $GI_P \cdot cos(\lambda)$, siendo $GI_P$ el índice geomagnético planetario, que puede ser $Dst$ o su equivalente de mayor resolución $SYM-H$, mientras que $\lambda$ es la latitud geomagnética de la región de interés. $H_{iono} = H_{Ddyn}+H_{DP2}$, son las fluctuaciones magnéticas asociadas con las corrientes ionosféricas $Ddyn$ y $DP2$. Considerando que las corrientes $Ddyn$ y $DP2$ generan fluctuaciones cuasi-periódicas bien diferenciadas entre sí, es posible aislar sus efectos a través de filtros de frecuencias. \cite{CASTELLANOSVELAZCO2024106237} usó espectro de potencias para identificar la banda de frecuencia en que $Ddyn$ presentaba tales fluctuaciones para cada evento\\
+
+\begin{equation}
+	\label{eq:diono2}
+	H_{Ddyn}+H_{DP2} = H-(GI_P \cdot cos(\lambda)+H_0+H_{SQ}).
+\end{equation}
+
+A partir del resultado de la Ecuación \ref{eq:diono2}, \cite{amory2020_filtros} propone usar filtros de frecuencia para aislar las firmas magnéticas de $Ddyn$ y $DP2$. De acuerdo con estudios previos \citep{nishida_68_fluctuations, blanc_ddyn}, los periodos en que las corrientes $Ddyn$ y $DP2$  generan fluctuaciones en el campo magnético regional son de aproximadamente $\sim 24 h$ y $\leq 4h$ respectivamente. Consecuentemente, se requiere ajustar un filtro pasa bandas para $H_{Ddyn}$ y un filtro pasa altas para $H_{DP2}$.\\
+
+
+Si bien la frecuencia de corte para el filtro pasa altas es bien definida ($f \geq 6.94 \times 10 ^{-5} Hz$ o $T \leq 4 h$) por \cite{nishida_68_fluctuations}, el caso de las frecuencias de corte para el filtro pasa-bandas es menos trivial. Las dos frecuencias de corte pueden variar significativamente dependiendo de cada TGM. Es por ello que en el \cite{CASTELLANOSVELAZCO2024106237} se optó por aplicar espectros de potencia ($PSD$) al resultado de \ref{eq:diono2} correspondiente a cada TGM. El $PSD$ permite detectar picos de potencia a determinadas frecuencias. Al usar ésta herramienta, se encontró que los picos de potencia coinciden con los rangos de frecuencia en que $H_{Ddyn}$ presenta sus fluctuaciones. Una vez detectados los picos de potencia, se ajustan las frecuencias de corte entorno a éstos. Finalmente, se realiza el proceso de filtrado para aislar las fluctuaciones magnéticas de $H_{Ddyn}$ y $H_{DP2}$.\\
+
+Las limitaciones con el método descrito previamente son: 
+
+\begin{enumerate}
+	\item El espectro de potencia solo permite estudiar las intensidades en el dominio de la frecuencia, pero no en el tiempo. Ésto impide analizar el periodo en el que se generaron tales picos de intensidad \citep{amory_2021}.
+	
+	\item Se intenta aproximar toda la actividad magnetosférica a través de un índice geomagnético siendo que sus valores, y desestima los efectos de la corriente del anillo.
+	
+	\item Se aproxima a la corriente del anillo, como una corriente longitudinalmente simétrica. Esto difiere con que se trata de un sistema de corrientes asimétrico, compuesto por dos corrientes, una simétrica y una asimétrica.		
+\end{enumerate}
+
+Para atender éstos problemas, se propone el siguiente procedimiento adicional:
+
+\subsection{Análisis de frecuencia y Tiempo: Wavelets}
+\label{SS:2-3}
+
+Como se menciona en las conclusiones de \cite{CASTELLANOSVELAZCO2024106237}, una buena forma de ampliar el entendimiento de la respuesta geomagnética en periodos de tormenta es el análisis en dominio de tiempo y frecuencia. Tal práctica se llevó a cabo en \cite{amory_2021}. Actualmente, se han llevado a cabo estudios preliminares de wavelets de los eventos enlistados en la Tabla \ref{tab:1}, para los observatorios enlistados en la Tabla \ref{tab:2}.\\
+
+Esta herramienta de análisis complementaria tiene ciertas ventajas, ya que permite detectar el momento en el tiempo en que se presentan ciertas fluctuaciones a determinada frecuencia. Esto es algo que no puede observarse en los espectros de potencia (bien puede tratarse de un efecto limitado a un corto periodo, o un efecto persistente). Esta es la idea del uso de wavelets, pues permite localizar en tiempo determinadas fluctuaciones a ciertas frecuencias.\\
+
+La transformada wavelet puede ser utilizada para analizar series de tiempo que contengan una potencia no estacionaria en diferentes frecuencias \citep{guide_wavelet_routines}. De la misma forma, es necesario considerar la forma o función wavelet $\psi_0(n)$ donde $n$ es un parámetro de tiempo. Una función wavelet, como la ondícula \emph{Morlet} que es la seleccionada para éste trabajo. Al igual que con los \emph{PSD}, la potencia de la ondícula permite visualizar los picos de energía de las frecuencias más significativas, con la diferencia en que también se obtiene información en el dominio del tiempo \cite{book_analysis_Method_multiSp_data, guide_wavelet_routines}.
+
+\subsection{Identificación individual de fuentes magnetosféricas}
+Según \cite{partialringcurrentidx}, una fuente significativa de la respuesta geomagnética regional es la presencia una corriente parcial del anillo. Se trata de una corriente que se presenta en durante la fase principal de la TGM. No obstante, las corrientes de la magneto-pausa y magneto-cola también pueden influir en los valores de los índices $Dst$ y $SYM-H$, por lo que su actividad también podría influir en el clima espacial regional. Especialmente al considerar factores como el tiempo local en que se producen las TGM.\\
+
+
+De acuerdo con \cite{partialringcurrentasym}, a través del modelado, es posible aproximar la contribución magnética asociada con las corrientes de la magneto-pausa, magneto-cola y la corriente parcial del anillo. El modelo planteado por \cite{parabmagnet}, es puesto en práctica en \cite{magnetosphericcurrentscontr, partialringcurrentasym}. En este modelo, se determina el campo magnético asociado a cada fuente magnetosférica posible dependiendo de las condiciones del medio interplanetario y la respuesta geomagnética:\\ 
+
+\begin{equation}
+	H_{mag} = H_{mp}(\psi, R_1)+H_t(\psi, R_1, R_2, \Phi_{pc})+H_r(\psi, h_r) + H_{pr}(\psi, I_{pr}, \theta_{pr}) + H_{mr}(\psi, R_1, h_r)
+\end{equation}	
+
+\noindent donde, $H_{mp}$ es el campo magnético inducido por la magnetopausa y que apantalla al campo magnético, $H_r$ es el campo magnético asociado con la corriente simétrica del anillo, $H_t$ es el campo de la magneto cola, $H_{pr}$ es el campo asociado con la corriente parcial del anillo, $H_{mr}$ es el campo magnético de la magnetopausa que apantalla al campo de la corriente y $H_{fac}$ es el campo de las corrientes alineadas al campo.\\
+
+Adicionalmente, el modelo requiere de parámetros de entrada. Éstos son el ángulo de inclinación $\psi$ del eje, $R_1$ que es la distancia a la nariz de la magneto-pausa, $R_2$ es la distancia de la tierra al borde de la hoja de corriente de la magneto-cola, $\Phi_{pc}$ es el flujo magnético en los lóbulos de la cola, $h_r$ es el campo de la corriente del anillo en el centro de la Tierra, $I_{pr}$ es la máxima intensidad de la región 1 de la corriente alineada al campo, $\theta_{pr}$ es la latitud del electrojet ecuatorial en dirección oeste y $I_{pr}$ es la corriente total del anillo parcial.\\
+
+Cabe señalar que, algunos de estos parámetros se determinan mediante modelos complementarios, los cuales usan parámetros del medio interplanetario. En ese caso, se puede usar5 la plataforma pública \url{https://omniweb.gsfc.nasa.gov/} para tener acceso a parámetros del medio interplanetario como velocidad del viento solar, densidad del viento solar, campo magnético interplanetario, entre otros.\\
+
+\section{Observaciones Finales}
+\label{S:3}
+
+
+
+
+
+
+\section{Appendix}
+\label{S.4}
+
+
+\subsection{Algoritmo de Whitaker-Hayes}
+Una de las dificultades que se presentan al pre-procesar los datos de campo magnético son los valores extremos. Éstos valores pueden afectar los análisis posteriores, por lo que es sumamente importante poder generar un algoritmo que los detecte y elimine de la serie de tiempo a pre-procesar. Para detectar éstos valores extremos, se busca implementar el algoritmo de Whitaker-Hayes. Una ventaja que proporciona este algoritmo es que es lo suficientemente poco costoso, computacional mente hablando. Tal característica permite que el algoritmo Whitaker-Hayes pueda ser ejecutado por la mayoría de sistemas computacionales \cite{WHITAKER2018}.\\
+
+El algoritmo consiste en determinar qué tan alejado está un determinado valor con respecto a centro de la distribución de datos, usando medidas de variaciones (desviación estándar o rango intercuartil). El \emph{Puntaje Z modificado} o \emph{PZM}  utiliza la desviación de la mediana absoluta (DMA). Para poder lidiar con los picos \citep{WHITAKER2018, removing_with_Whitaker-Hayes}, se usa una derivada de primer orden en los datos continuos o $\nabla H(i) = H(i)- H(i-1)$ para calcular el \emph{PZM}. Así, el algoritmo se expresa de la siguiente forma:
+
+\begin{equation}
+	\lvert z(i)\rvert = \bigg| 0.6745 \cdot \frac{\nabla H(i) - M}{MAD}\bigg|
+\end{equation}
+
+donde $DMA = |H-M|$, siendo $M$ la mediana de la serie de tiempo H(i) y el factor 0.6745 es el cuartil 75 de la distribución normal estándar \cite{removing_with_Whitaker-Hayes}.\\
+
+Para poder lidiar con los picos \cite{WHITAKER2018, removing_with_Whitaker-Hayes} consideran que éstos tienen una alta diferencia con respecto de sus valores vecinos, así como un efecto de aumento súbito (no gradual). De esta forma, se usa una derivada de primer orden en los datos continuos o $\nabla H(i) = H(i)- H(i-1)$ para calcular el \emph{PZM}. Se observará un efecto de aplanamiento sobre las variaciones graduales, mientras que los picos que son delgados y de incremento agudo, son preservados. Así, el algoritmo se expresa de la siguiente forma:
+\begin{equation}
+	\lvert z(i)\rvert = \bigg| 0.6745 \cdot \frac{\nabla H(i) - M}{MDA}\bigg|
+\end{equation}
+
+El criterio propuesto por la \emph{Sociedad Americana de Control de Calidad} es a partir de 3.5 , aunque de acuerdo con \cite{removing_with_Whitaker-Hayes}, el umbral dependerá de la serie de tiempo. El paso final es reemplazar por valores nulos y, en caso de ser necesario, es posible reemplazarlos a partir de una interpolación con los valores vecinos.
+
+\subsection{Media Móvil / Mediana Móvil}
+
+
+\subsection{Analisis de señales: Teorema de Percival y el Espectro de potencia}
+\label{psd_section}
+De acuerdo con el teorema de Percival, la energía de la señal se relaciona con la contribución de la densidad de energía en el sistema, a partir del parámetro a medir \cite{book_analysis_Method_multiSp_data}. La relación de Percival se describe por medio de la siguiente expresión: 
+
+\begin{equation}
+	\frac{1}{T} \int_{t0}^{t0+T} H^2(t)dt = \Tilde{H}[0] + 2 \sum_{n=1}^\infty |\Tilde{H}[n]^2|
+\end{equation}
+
+Los términos de la ecuación dependen de la longitud del intervalo T. Mientras que el lado izquierdo de la ecuación permanece igual (al modificar T), el lado derecho tendrá un cambio en el espaciamiento de las frecuencias $\Delta f = 1/T$. Entonces, los coeficientes en $|\Tilde{H}[n]|$ dependen de la longitud de la señal. Para poder describir entonces la distribución de la densidad de la energía de la señal en el espacio de frecuencias, introducimos la función \emph{PSD}:
+
+\begin{equation}
+	PSD[n] = 2T |\Tilde{H}|^2
+\end{equation}
+
+para todo $n$ positivo. Entonces, la relación de Percival toma la forma de:
+
+\begin{equation}
+	\frac{1}{T} \int_0^T H^2 (t)dt = PSD[0] \frac{\Delta f}{2} +2 \sum_{n=1}^\infty PSD[n] \Delta f
+\end{equation}
+
+Habiendo definido \emph{PSD}, su valor para una frecuencia en particular no cambiará con distintos T. La \emph{PSD} tiene una interpretación física inmediata: se trata de la contribución de la energía de la señal a partir de cada intervalo de frecuencia $\Delta f$ alrededor de $f_n$. Esto solo puede ser usado para frecuencias reales, ya que ignora las del conjunto imaginario.
+\vspace{1 em}
+
+La otra parte de la señal se encuentra en el espectro de fase, definido como:
+\begin{equation}
+	\Tilde{H}[n] = |\Tilde{H}[n]| exp(i\varphi [n]), 
+\end{equation}
+
+donde $\varphi [-n] = -\varphi[m]$ y $\varphi[0]=0$. el valor absoluto de la fase depende de la posición inicial del muestreo de la señal.
+\vspace{1 em}
+
+\subsubsection{Función Ventana}
+
+Considerando que, tanto la transformada discreta de Fourier como PSD consideran las series de tiempo como infinitas, al usar series de tiempo de duración finita conduce a un problema: el efecto de borde. La abrupta interrupción en una ventana de tiempo usada (denominada como rectangular) ocasiona una pérdida de energía desde cualquiera de los picos espectrales, hacia las frecuencias vecinas. Esto se debe a que el efecto escalón debido al borde provoca una dispersión en la energía, la cual es transferida \cite{book_analysis_Method_multiSp_data}.
+\vspace{1 em}
+
+Como solución para este fenómeno, se han diseñado una gran variedad de funciones ventana. Se trata de un subconjunto de la serie de tiempo (o sub-ventanas de la ventana original) a la cual se le aplica una función, la cual se irá recorriendo para toda la serie de tiempo. Como tal, las funciones ventanas no pueden llevar la pérdida de frecuencia a cero, sin embargo tienen la capacidad de atenuar la pérdida de energía que normalmente se dispersa hacia las demás frecuencias, ocasionando un incremento en el grosor del pico principal.
+\vspace{1 em}
+
+En este punto, es importante dedicar esfuerzo a la selección de parámetros de la ventana (y a la selección de la función ventana). No obstante, el objetivo principal es \textbf{no usar una ventana rectangular}.
+\vspace{1 em}
+
+En general, al multiplicar la señal por coeficientes de las ventanas (que suelen ser menores a 1), se obtiene una pérdida general de la energía. Esta pérdida depende de la señal en sí, pero al considerar la relación de Percival, se tiene que el decremento estadístico esperado de los valores del PSD debido a la función ventana es del promedio del cuadrado de la ventana:
+
+\begin{equation}
+	W_{pc} = \frac{1}{N} \sum_{j=0}^{N-1} w[j]^2,
+\end{equation}
+
+por lo que para compensar la pérdida de energía en el PSD, posterior a la aplicación de la función ventana, el PSD debe dividirse por $W_{pc}$.
+\vspace{1 em}
+
+\subsection{Análisis de Ondículas}
+
+La técnica para representar variaciones rápidas en el dominio de la frecuencia y variaciones lentas en el dominio del tiempo se conoce como análisis tiempo-frecuencia. La relación entre tiempo-frecuencia (alta-baja resolución) depende de las propiedades de la señal, para saber si se quiere que el tiempo tenga mayor resolución, a expensas de resolución en frecuencia o viceversa \cite{book_analysis_Method_multiSp_data}. La aplicación de este tipo de análisis tiene ciertas ventajas, ya que permite detectar el momento en el tiempo en que se presentan ciertas fluctuaciones a determinada frecuencia. Esto es algo que no puede observarse en los espectros de potencia, donde sólo se muestran los picos de potencia, pero no se muestra el tiempo en que se presentan (bien puede tratarse de un efecto limitado a un corto periodo, o un efecto persistente). Esta es la idea del uso de las ondículas, pues el poder localizar en tiempo determinadas fluctuaciones a ciertas frecuencias o trenes de ondas implica una ventaja al no saber si se trata de una señal persistente o muy breve en la ventana. 
+\vspace{1 em}
+
+La transformada Wavelet o de ondícula puede ser utilizada para analizar series de tiempo que contengan una potencia no estacionaria en diferentes frecuencias \cite{guide_wavelet_routines}. De la misma forma, es necesario considerar la forma o función de la ondícula $\psi_0(n)$ donde $n$ es un parámetro de tiempo. Una función ondícula, como la ondícula Morlet tiene la siguiente forma:
+
+\begin{equation}
+	\psi_0(n) = \pi^{1/4}e^{i \omega_0 n} e ^{-n^2/2}
+\end{equation}
+
+donde $\omega_0$ es una frecuencia adimensional. El término función wavelet o de ondícula se refiere a ondículas ortogonales o no ortogonales. Para series de tiempo discretas, se utiliza una transformada discreta que tiene la siguiente forma: 
+
+\begin{equation}
+	W_n(s) = \sum_{k = 0}^{N-1} \hat{x}_k \hat{\psi} \ast (s \omega_k) e^{i \omega_k n {\displaystyle \delta} t}
+\end{equation}
+
+donde $\hat{x}_n$ es una transformada discreta de Fourier, $k=0...N-1$ es el índice de las frecuencias, $s$ es la escala que permite modificar la amplitud de la forma sinusoidal resultante y la frecuencia angulas $\omega_k$ se define como:
+
+\begin{equation}
+	\begin{split}
+		\omega_k = \frac{2 \pi k}{N {\displaystyle \delta} t} : k \le \frac{N}{2}\\
+		\omega_k = - \frac{2 \pi k}{N {\displaystyle \delta} t} : k > \frac{N}{2}
+	\end{split}
+\end{equation}
+
+Una practica común \cite{book_analysis_Method_multiSp_data, guide_wavelet_routines} es la de normalizar las transformadas de ondícula, para que puedan compararse unas con otras, mediante la siguiente expresión:
+
+\begin{equation}
+	\hat{\psi}(s \omega_k) = (\frac{2 \pi s}{{\displaystyle \delta} t} )^{1/2} \hat{\psi}_0 (s \omega_k)
+\end{equation}
+
+Por otro lado, así como es posible obtener la energía de la señal derivada a partir del teorema de Percival, también es posible hacer lo propio con la transformada de ondícula, siendo ésta la potencia espectral de la ondícula definida como $|W_n(s)|^2$. Al igual que con los \emph{PSD}, la potencia de la ondícula permite visualizar los picos de energía de las frecuencias más significativas, con la diferencia en que también se obtiene información en el dominio del tiempo.
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+\section{References}
+\label{S.5}
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+\bibliographystyle{model1-num-names}
+\bibliography{ref_article.bib}
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.

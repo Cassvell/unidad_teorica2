@@ -1,0 +1,106 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: project.aux
+The style file: model1-num-names.bst
+Database file #1: ref_article.bib
+Repeated entry---line 108 of file ref_article.bib
+ : @misc{Dealing_with_outliers
+ :                            ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 293 of file ref_article.bib
+ :  
+ :  year = "2018"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 812 of file ref_article.bib
+ :  
+ :  doi = {10.29327/2pangeo.a29}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 945 of file ref_article.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 954 of file ref_article.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 962 of file ref_article.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1129 of file ref_article.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1137 of file ref_article.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1226 of file ref_article.bib
+ :  
+ :  % volume = "65",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1251 of file ref_article.bib
+ :  note = "consultado, 2021"
+ :                           .
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1462 of file ref_article.bib
+ :  
+ :  %   subtitle = {Fact Sheet N°282},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1472 of file ref_article.bib
+ :  
+ :  %   subtitle = {Fact Sheet N°282},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in iaga_guide
+Warning--empty pages in iaga_guide
+Warning--empty journal in tesis
+Warning--empty booktitle in iqr_theory
+Warning--empty pages in iqr_theory
+Warning--empty year in brief_overview_outlier-detection; set to ????
+You've used 29 entries,
+            2616 wiz_defined-function locations,
+            752 strings with 9621 characters,
+and the built_in function-call counts, 15308 in all, are:
+= -- 1152
+> -- 606
+< -- 24
++ -- 234
+- -- 199
+* -- 1802
+:= -- 2401
+add.period$ -- 32
+call.type$ -- 29
+change.case$ -- 212
+chr.to.int$ -- 29
+cite$ -- 35
+duplicate$ -- 990
+empty$ -- 1028
+format.name$ -- 278
+if$ -- 2766
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 222
+newline$ -- 132
+num.names$ -- 118
+pop$ -- 219
+preamble$ -- 1
+purify$ -- 210
+quote$ -- 0
+skip$ -- 314
+stack$ -- 0
+substring$ -- 714
+swap$ -- 835
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 249
+warning$ -- 6
+while$ -- 106
+width$ -- 0
+write$ -- 361
+(There were 12 error messages)
